@@ -13,7 +13,9 @@ public class Tester{
                  {34, 12, 10},
                  {56,0,0},
                  {21,14,21}};
-
+    int[][] C = {{100,34,56,21},
+                 {12,12,0,14},
+                 {-56,10,0,21}};
 
     System.out.println(ArrayOps.sum(arrA));
     System.out.println(ArrayOps.sum(arrB));
@@ -37,7 +39,11 @@ public class Tester{
 
     System.out.println(ArrayOps.isRowMagic(A));
     System.out.println(ArrayOps.isRowMagic(B));
+    System.out.println(ArrayOps.isRowMagic(C));
 
+    System.out.println(ArrayOps.isColMagic(A));
+    System.out.println(ArrayOps.isColMagic(B));
+    System.out.println(ArrayOps.isColMagic(C));
 
 
   }
